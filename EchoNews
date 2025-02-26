@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All-in-One News</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>All-in-One News</h1>
+    </header>
+    <div class="tabs">
+        <button class="tab-button active" onclick="openTab('middle-east')">Middle East</button>
+        <button class="tab-button" onclick="openTab('asia')">Asia</button>
+        <button class="tab-button" onclick="openTab('americas')">Americas</button>
+    </div>
+    <div class="filters">
+        <button onclick="filterNews('war')">War</button>
+        <button onclick="filterNews('politics')">Politics</button>
+        <button onclick="filterNews('religion')">Religion</button>
+        <button onclick="filterNews('all')">All</button>
+    </div>
+    <div id="middle-east" class="tab-content active">
+        <h2>Middle East News</h2>
+        <div class="news-container" id="middle-east-news"></div>
+    </div>
+    <div id="asia" class="tab-content">
+        <h2>Asia News</h2>
+        <div class="news-container" id="asia-news"></div>
+    </div>
+    <div id="americas" class="tab-content">
+        <h2>Americas News</h2>
+        <div class="news-container" id="americas-news"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
